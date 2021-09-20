@@ -1,0 +1,387 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+
+.width{
+  color: red;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 11110;
+}
+body{
+  background-color: rgb(0, 31, 32);
+}
+header{
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  background-color: rgba(0, 31, 32, 0.863);
+}
+.logo{
+  font-size: 60px;
+  font-weight: 900;
+}
+.logo a {
+  color: gold;
+  text-decoration: none;
+}
+.logo a:hover{
+  border-bottom: none;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+nav li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 10px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: rgb(255, 249, 215);
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+a:hover{
+  color: gold;
+  border-bottom: 2px solid gold;
+  padding-bottom: 3px;
+}
+a:active{
+  font-size: 15px;
+}
+.introduction{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background-image: url(./introduction.jpg);
+  background-size: cover;
+  border-bottom: 1px solid gold;
+}
+.introduction:before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.3;
+}
+.profile{
+  width: 450px;
+  height: 400px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+.profile img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgb(255, 249, 215),-2px -2px 5px rgb(255, 249, 215),-2px 2px 5px rgb(255, 249, 215),2px -2px 5px rgb(255, 249, 215);
+}
+.profile h2{
+  color: gold;
+  font-size: 35px;
+  font-weight: 900;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+.profile p {
+  font-size: 18px;
+  color: rgb(255, 249, 215);
+}
+section{
+  width: 100%;
+  border-bottom: 1px solid gold;
+}
+#aboutMe{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 31, 32);
+  padding: 80px 10%;
+}
+#aboutMe img{
+  margin-right: 10px;
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 3px 3px 10px black, -2px -2px 2px white;
+}
+aside{
+  height: 300px;
+}
+.right{
+  overflow-y: hidden;
+}
+aside h1{
+  color: rgb(255, 217, 0);
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-decoration: underline;
+}
+aside p{
+  color: rgb(168, 168, 168);
+}
+.left{
+  display: flex;
+  justify-content:start;
+  margin-right: 20px;
+  border-right: 2px solid gold;
+}
+.description {
+  width: 300px;
+  height: 300px;
+  text-align: left;
+  padding:35px 20px;
+}
+.description p {
+  margin: 10px 0px 10px 0px;
+}
+.description strong{
+  margin-right: 5px;
+  font-size: 17px;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Projects */
+#projects{
+  position: relative;
+  width: 300px;
+  border-bottom:none;
+  margin-bottom: 40px;
+}
+#projects h1 {
+  color: rgb(255, 217, 0);
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+#projects ul li{
+  list-style: none;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+#projects ul li a{
+  text-decoration: none;
+  color: rgb(168, 168, 168);
+  font-size: 17px;
+  font-weight: 900;
+}
+#projects ul li:before {
+  content: ' \27A0';
+  height: 10px;
+  width: 30px;
+  color: red;
+  position: absolute;
+  left:0;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/* Skills */
+#skills{
+  position: relative;
+  width: 300px;
+  border-bottom:none;
+  margin-left: 100px;
+}
+#skills h1 {
+  color: rgb(255, 217, 0);
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+#skills ul li{
+  list-style: none;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: rgb(168, 168, 168);
+  font-size: 17px;
+  font-weight: 900;
+}
+i{
+  margin-right: 12px;
+}
+
+
+
+
+.container{
+  display: flex;
+  padding: 50px 10%;
+  border-bottom: 1px solid gold;
+}
+
+
+#contact{
+  height: 300px;
+}
+#projects ul li a:hover{
+  color: gold;
+  border-bottom: 2px solid gold;
+  padding-bottom: 3px;
+}
+#projects ul li a:active{
+  font-size: 15px;
+}
+#skills ul li a:hover{
+  border-bottom:none;
+}
+footer{
+  width: 100%;
+  padding: 40px 10%;
+  display: flex;
+  justify-content: center;
+}
+footer h1{
+ color: red;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 1200px){
+  #aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 31, 32);
+    padding: 80px 10%;
+  }
+  aside{
+    height:auto;
+  }
+  .right{
+    overflow-y:visible;
+  }
+  .left{
+    margin-right: 0px;
+    border-right:none;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    width: 300px;
+    height: 200px;
+    text-align: left;
+    border: none;
+    padding: 0 20px;
+  }
+ 
+}
+@media only screen and (max-width: 750px){
+  header{
+    padding: 0 2%;
+  }
+  #aboutMe{
+    padding: 40px 5%;
+  }
+
+  aside{
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+  } 
+  .container{
+    display: flex;
+    padding: 50px 5%;
+    border-bottom: 1px solid gold;
+  }
+  #projects{
+    position: relative;
+    /* border-bottom:none; */
+    margin-bottom: 0px;
+    margin-right: 10%;
+  }
+  #skills{
+    position: relative;
+    width: 300px;
+    border-bottom:none;
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 570px){
+  .container{
+    display: block;
+  }
+  #projects{
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .logo{
+    width: 80px;
+    margin: 0 auto;
+  }
+
+
+  nav{
+    width: 400%;
+    margin-left: -150%;
+    padding: 3px 0;
+    opacity:0 ;
+    background-color: rgba(0, 0, 0, 0.863);
+    transition: .5s;
+    margin-top: 1px;
+  }
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+  }
+  header{
+    display: block;
+    justify-content: center;
+    padding: 0 ;
+  }
+  .fa-bars{
+    color: red;
+    position: absolute;
+    left: 10px;
+    top: 25px;
+}
+.fa-bars:hover{
+  cursor: pointer;
+}
+}
+#contacts{
+  display: flex;
+  flex-direction: column;
+}
+#contacts h1{
+  font-size: 50px;
+  color: gold;
+}
+#contacts h3{
+  color: red;
+  margin: 0 20px;
+}
+i{
+  margin: 5px 40px;
+  display:inline;
+  color: rgb(255, 242, 166);
+}
